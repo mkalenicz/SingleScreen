@@ -9,36 +9,40 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:src="@drawable/angelwings"
         android:layout_weight="1"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        android:src="@drawable/angelwings" />
+
     <LinearLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/business_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="business name"
-            android:textSize="28sp"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginTop="16dp"
+            android:text="business name"
+            android:textColor="@android:color/black"
+            android:textSize="28sp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp"
-            android:onClick="dialPhoneNumber">
+            android:layout_marginTop="16dp"
+            android:onClick="dialPhoneNumber"
+            android:orientation="horizontal">
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_phone_black_24dp"
-                android:paddingRight="8dp"/>
+                android:paddingRight="8dp"
+                android:src="@drawable/ic_phone_black_24dp" />
+
             <TextView
                 android:id="@+id/phone_number"
                 android:layout_width="wrap_content"
@@ -49,14 +53,17 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="8dp"
-            android:layout_marginLeft="16dp">
+            android:onClick="composeEmail"
+            android:orientation="horizontal">
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_email_black_24dp"
-                android:paddingRight="8dp"/>
+                android:paddingRight="8dp"
+                android:src="@drawable/ic_email_black_24dp" />
+
             <TextView
                 android:id="@+id/email"
                 android:layout_width="wrap_content"
@@ -68,15 +75,16 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="8dp"
-            android:layout_marginLeft="16dp">
+            android:onClick="showMap"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_place_black_24dp"
-                android:paddingRight="8dp"/>
+                android:paddingRight="8dp"
+                android:src="@drawable/ic_place_black_24dp" />
 
             <TextView
                 android:id="@+id/adress"
@@ -88,14 +96,15 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="8dp"
-            android:layout_marginLeft="16dp">
+            android:orientation="horizontal">
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_access_time_black_24dp"
-                android:paddingRight="8dp"/>
+                android:paddingRight="8dp"
+                android:src="@drawable/ic_access_time_black_24dp" />
 
             <TextView
                 android:id="@+id/hours_of_operation"
@@ -107,14 +116,15 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="8dp"
-            android:layout_marginLeft="16dp">
+            android:orientation="horizontal">
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_info_black_24dp"
-                android:paddingRight="8dp"/>
+                android:paddingRight="8dp"
+                android:src="@drawable/ic_info_black_24dp" />
 
             <TextView
                 android:id="@+id/description"
@@ -125,11 +135,7 @@
         </LinearLayout>
 
 
-
-
-
     </LinearLayout>
-
 
 
 </LinearLayout>
