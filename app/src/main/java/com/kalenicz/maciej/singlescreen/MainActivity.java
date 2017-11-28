@@ -22,11 +22,13 @@ public class MainActivity extends AppCompatActivity {
         TextView email = findViewById(R.id.email);
         TextView openingHours = findViewById(R.id.hours_of_operation);
         TextView description = findViewById(R.id.description);
-        businessName.setText("Wroclove Apartment");
-        phoneNumber.setText("+48602393632");
-        email.setText("maciej.kalenicz@gmail.com");
-        openingHours.setText("4:00 P.M. - 12:00 A.M.");
-        description.setText("We offer exclusive apartments in the center of Wroclaw");
+        TextView adress = findViewById(R.id.adress);
+        adress.setText(R.string.adress);
+        businessName.setText(R.string.business_name);
+        phoneNumber.setText(R.string.phone_number);
+        email.setText(R.string.email);
+        openingHours.setText(R.string.opening_hours);
+        description.setText(R.string.description);
 
     }
 
@@ -55,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void showMap(View view) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse("geo:0,0?q=51.104071,17.051413(Wroclove Apartment)"));
+        intent.setData(Uri.parse(getString(R.string.geolocation)));
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }

@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Single Screen</string>
+    <string name="business_name">Wroclove Apartment</string>
+    <string name="phone_number">+48602393632</string>
+    <string name="email">maciej.kalenicz@gmail.com</string>
+    <string name="opening_hours">4:00 P.M. - 12:00 A.M.</string>
+    <string name="description">We offer exclusive apartments in the center of Wroclaw</string>
+    <string name="geolocation">geo:0,0?q=51.104071,17.051413(Wroclove Apartment)</string>
+    <string name="adress">Walonska, 50-413 Wroclaw</string>
 </resources>
